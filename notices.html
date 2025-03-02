@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect - Notices</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Campus Connect</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notices.html" class="active">Notices</a></li>
+                <li><a href="lost-found.html">Lost & Found</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notices">
+            <h1>Digital Notice Board</h1>
+            <div class="notice-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="official">Official</button>
+                <button class="filter-btn" data-filter="unofficial">Unofficial</button>
+            </div>
+            <div class="notice-list">
+                <!-- Notice items will be dynamically added here -->
+            </div>
+            <button id="add-notice-btn" class="btn">Add Notice</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Campus Connect. All rights reserved.</p>
+    </footer>
+
+    <!-- Add Notice Modal -->
+    <div id="notice-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Notice</h2>
+            <form id="notice-form">
+                <input type="text" id="notice-title" placeholder="Notice Title" required>
+                <textarea id="notice-content" placeholder="Notice Content" required></textarea>
+                <select id="notice-type" required>
+                    <option value="">Select Notice Type</option>
+                    <option value="official">Official</option>
+                    <option value="unofficial">Unofficial</option>
+                </select>
+                <button type="submit" class="btn">Post Notice</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

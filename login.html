@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <h1>Campus Connect</h1>
+        <div class="auth-tabs">
+            <button class="auth-tab active" data-tab="student">Student Login</button>
+            <button class="auth-tab" data-tab="staff">Staff Login</button>
+        </div>
+        <form class="auth-form" id="student-login-form">
+            <h2>Student Login</h2>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Student ID" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <form class="auth-form hidden" id="staff-login-form">
+            <h2>Staff Login</h2>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Staff ID" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
